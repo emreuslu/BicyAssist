@@ -1,5 +1,4 @@
 from pirc522 import RFID
-import signal
 import time
 import datetime
 import RPi.GPIO as GPIO
@@ -45,7 +44,6 @@ def sensorCallback(channel):
   
 
   if GPIO.input(channel):
-    ##print("Mıknatıs yok " + stamp)
       pass
   else:
     print("Mıknatıs algılandı " + stamp)
